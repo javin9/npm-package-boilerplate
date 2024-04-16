@@ -1,0 +1,12 @@
+{
+  "name": "npm-package-boilerplate",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1 https://pauloe-me.medium.com/typescript-npm-package-publishing-a-beginners-guide-40b95908e69c"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
