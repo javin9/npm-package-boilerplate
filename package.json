@@ -1,10 +1,10 @@
 {
   "name": "npm-package-boilerplate",
   "version": "1.0.0",
-  "description": "",
+  "description": "npm包的描述信息",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1 https://pauloe-me.medium.com/typescript-npm-package-publishing-a-beginners-guide-40b95908e69c"
+    "test": "npx ts-node src/index"
   },
   "keywords": [],
   "author": "",

@@ -4,3 +4,7 @@ handle-data
 package-lock.json
 yarn.lock
 dist
+
+# Ignore test-related files
+/coverage.data
+/coverage/
