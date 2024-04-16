@@ -2,11 +2,47 @@
   "name": "npm-package-boilerplate",
   "version": "1.0.0",
   "description": "npm包的描述信息",
-  "main": "index.js",
-  "scripts": {
-    "test": "npx ts-node src/index"
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "typings": "./types/index.d.ts",
+  "exports": {
+    ".": {
+      "import": {
+        "types": "./dist/index.d.ts",
+        "default": "./dist/index.mjs"
+      },
+      "require": {
+        "types": "./dist/index.d.ts",
+        "default": "./dist/index.js"
+      }
+    },
+    "./dist/*": "./dist/*",
+    "./package.json": "./package.json"
   },
-  "keywords": [],
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "run": "npx ts-node src/index",
+    "build": "tsup"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/javin9/npm-package-boilerplate.git"
+  },
+  "bugs": {
+    "url": "https://github.com/javin9/npm-package-boilerplate/issues"
+  },
+  "keywords": [
+    "npm",
+    "boilerplate",
+    "typescript"
+  ],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "ts-node": "^10.9.2",
+    "tsup": "^8.0.2",
+    "typescript": "^5.4.5"
+  }
 }
