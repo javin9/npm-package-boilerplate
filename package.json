@@ -24,7 +24,8 @@
   ],
   "scripts": {
     "run": "npx ts-node src/index",
-    "build": "tsup"
+    "build": "tsup",
+    "test": "vitest --coverage"
   },
   "repository": {
     "type": "git",
@@ -41,8 +42,10 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@vitest/coverage-v8": "^1.5.0",
     "ts-node": "^10.9.2",
     "tsup": "^8.0.2",
-    "typescript": "^5.4.5"
+    "typescript": "^5.4.5",
+    "vitest": "^1.5.0"
   }
 }
